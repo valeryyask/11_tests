@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Form</title>
+</head>
+<body>
+    <h1 id="header">Регистрация</h1>
+    <form id="myForm">
+        <input type="text" id="username" name="username" placeholder="Имя пользователя">
+        <button type="submit" id="submitBtn">Отправить</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('result').innerText = 'Успешно!';
+        });
+    </script>
+</body>
+</html>git branch -M main
